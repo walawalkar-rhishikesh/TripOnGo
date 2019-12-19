@@ -1,0 +1,407 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.nikunjsingh.Tripongo.Interest">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Interests"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Shopping"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView5"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Historic"
+        android:id="@+id/textView9"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView7"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/shopping"
+        android:maxHeight="5dp"
+        android:onClick="shoppingLike"
+        android:layout_above="@+id/historic"
+        android:layout_toStartOf="@+id/textView18" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/historic"
+        android:maxHeight="5dp"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_alignStart="@+id/shopping"
+        android:onClick="historicLike" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Beach"
+        android:id="@+id/textView10"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView18"
+        android:layout_alignStart="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Temple"
+        android:id="@+id/textView11"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mosque"
+        android:id="@+id/textView12"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Garden"
+        android:id="@+id/textView13"
+        android:paddingTop="12dp"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toEndOf="@+id/textView18" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Chineese"
+        android:id="@+id/textView14"
+        android:paddingTop="12dp"
+        android:layout_marginTop="68dp"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Western"
+        android:id="@+id/textView15"
+        android:paddingTop="12dp"
+        android:layout_alignTop="@+id/textView14"
+        android:layout_alignEnd="@+id/textView11" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Punjabi"
+        android:id="@+id/textView16"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView14"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Planetarium"
+        android:id="@+id/textView17"
+        android:paddingTop="12dp"
+        android:layout_above="@+id/textView19"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Places"
+        android:id="@+id/textView18"
+        android:layout_above="@+id/shopping"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Food"
+        android:id="@+id/textView19"
+        android:layout_above="@+id/textView15"
+        android:layout_toEndOf="@+id/historic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Water Park"
+        android:id="@+id/textView20"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignStart="@+id/textView24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Church"
+        android:id="@+id/textView21"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Italian"
+        android:id="@+id/textView22"
+        android:paddingTop="12dp"
+        android:layout_alignTop="@+id/textView16"
+        android:layout_alignStart="@+id/textView15" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Desserts"
+        android:id="@+id/textView23"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mughlai"
+        android:id="@+id/textView24"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView22"
+        android:layout_toEndOf="@+id/textView19" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Mexican"
+        android:id="@+id/textView25"
+        android:paddingTop="12dp"
+        android:layout_below="@+id/textView23"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Continental"
+        android:id="@+id/textView26"
+        android:paddingTop="12dp"
+        android:layout_alignTop="@+id/continental"
+        android:layout_toStartOf="@+id/mughlai" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/mosque"
+        android:maxHeight="5dp"
+        android:onClick="mosqueLike"
+        android:layout_below="@+id/historic"
+        android:layout_toStartOf="@+id/textView18" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/church"
+        android:maxHeight="5dp"
+        android:onClick="churchLike"
+        android:layout_below="@+id/mosque"
+        android:layout_toStartOf="@+id/textView19" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/beach"
+        android:maxHeight="5dp"
+        android:onClick="beachLike"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_alignStart="@+id/temple" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/temple"
+        android:maxHeight="5dp"
+        android:onClick="templeLike"
+        android:layout_below="@+id/beach"
+        android:layout_alignEnd="@+id/garden" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/garden"
+        android:maxHeight="5dp"
+        android:onClick="gardenLike"
+        android:layout_below="@+id/temple"
+        android:layout_alignStart="@+id/waterpark" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/waterpark"
+        android:maxHeight="5dp"
+        android:onClick="waterparkLike"
+        android:layout_below="@+id/garden"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/chineese"
+        android:maxHeight="5dp"
+        android:onClick="chineeseLike"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignStart="@+id/historic" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/punjabi"
+        android:maxHeight="5dp"
+        android:onClick="punjabiLike"
+        android:layout_above="@+id/textView23"
+        android:layout_toStartOf="@+id/textView19" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/desserts"
+        android:maxHeight="5dp"
+        android:onClick="dessertsLike"
+        android:layout_below="@+id/punjabi"
+        android:layout_toStartOf="@+id/textView19" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/mexican"
+        android:maxHeight="5dp"
+        android:onClick="mexicanLike"
+        android:layout_alignTop="@+id/textView25"
+        android:layout_toStartOf="@+id/textView19" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/western"
+        android:maxHeight="5dp"
+        android:onClick="westernLike"
+        android:layout_alignTop="@+id/textView15"
+        android:layout_alignStart="@+id/italian" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/italian"
+        android:maxHeight="5dp"
+        android:onClick="italianLike"
+        android:layout_alignTop="@+id/textView22"
+        android:layout_alignStart="@+id/mughlai" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/mughlai"
+        android:maxHeight="5dp"
+        android:onClick="mughlaiLike"
+        android:layout_alignTop="@+id/textView24"
+        android:layout_alignStart="@+id/continental" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/continental"
+        android:maxHeight="5dp"
+        android:onClick="continentalLike"
+        android:layout_alignTop="@+id/mexican"
+        android:layout_alignStart="@+id/waterpark" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Like"
+        android:id="@+id/planetarium"
+        android:maxHeight="5dp"
+        android:onClick="planetariumLike"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_toEndOf="@+id/textView17" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GET PLAN"
+        android:id="@+id/getplan"
+        android:onClick="sendMessage"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_alignStart="@+id/mexican"
+        android:background="#c9cfff"/>
+
+
+</RelativeLayout>
